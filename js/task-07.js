@@ -6,8 +6,9 @@ console.dir(refs.input);
 
 refs.input.addEventListener('input', onImputSize);
 
+refs.text.style.fontSize = `${refs.input.value}px`;
+console.dir(`${refs.input.value}px`)
 function onImputSize(event) {
-    // console.dir(event.currentTarget.value + 'px');
-    // console.dir(event.currentTarget.value);
+    
    refs.text.style.fontSize = event.currentTarget.value + 'px';
 };
