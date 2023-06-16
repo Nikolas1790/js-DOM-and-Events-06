@@ -16,8 +16,8 @@ const element = ingredients.map(name => {
   li.classList.add('item');
   return li
 });
-console.dir(element)
+console.log(element)
 
 ingr.append(...element)
 
-console.dir(ingr)
+

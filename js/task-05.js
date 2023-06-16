@@ -6,12 +6,13 @@ const refs = {
   
 function onImputChange(event) {
     refs.output.textContent = event.currentTarget.value.trim();
-    if (event.currentTarget.value === '') {
+    if (!event.currentTarget.value) {
         refs.output.textContent = 'Anonymous';
     }
+    
     // console.dir(event.data)
-    // console.dir(event.currentTarget.value)
-    // console.dir(refs.output.textContent = event.currentTarget.value.trim());
+    console.dir(event.currentTarget.value)
+    
 };
 
   refs.input.addEventListener('input', onImputChange);
