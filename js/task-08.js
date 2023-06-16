@@ -1,24 +1,24 @@
 
-const form = document.querySelector('.login-form');
 
-form.addEventListener('submit',onSubmit);
+const formEl = document.querySelector(".login-form");
+
+formEl.addEventListener("submit", onSubmit);
 
 function onSubmit(event) {
-    event.preventDefault();     
-    const formData = new FormData(event.currentTarget);
+  event.preventDefault();
 
-// console.dir(FormData)
-    formData.forEach((name, value) => {
-// console.dir(value)
+  const user = {};
 
-        if (name === '') {
-            alert("✍️Пожалуйста заполните все поля.");
-        }
-        const data = {
-            value: name,
-        }
-        console.log(data);
-        form.reset();
-
-    })
+  const currForm = event.currentTarget;
+  for (let index = 0; index < currForm.elements.length - 1; index += 1) {
+    if (currForm.elements[index].value === "") {
+      alert("✍️Пожалуйста заполните все поля.");
+      return;
+    } else {
+        user[currForm.elements[index].name] = currForm.elements[index].value;
+        // console.log(currForm.elements[index].value);
+    }
+  }
+  console.log( user);
+  currForm.reset();
 }
