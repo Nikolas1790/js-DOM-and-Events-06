@@ -1,5 +1,7 @@
 const input = document.querySelector('#validation-input');
 
+
+
 function onImputChange(event) {
    
     const inputEl = event.currentTarget.value.trim().length;
@@ -10,9 +12,7 @@ function onImputChange(event) {
     } else {
         input.classList.add('invalid');
         input.classList.remove('valid');
-    }
-
-  
+    }  
 }
 
 input.addEventListener('blur', onImputChange);

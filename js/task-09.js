@@ -13,6 +13,7 @@ changeColor.addEventListener('click', onchangeColor);
 
 function onchangeColor() {  
   const randomColor = `${getRandomHexColor()}`;
+  
   body.style.background = randomColor;
   color.textContent = randomColor;
   console.dir(randomColor);
