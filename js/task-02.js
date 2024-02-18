@@ -7,7 +7,6 @@ const ingredients = [
   'Condiments',
 ];
 
-
 const ingr = document.querySelector('#ingredients');
 
 const element = ingredients.map(name => {
@@ -16,7 +15,6 @@ const element = ingredients.map(name => {
   li.classList.add('item');
   return li
 });
-console.log(element)
 
 ingr.append(...element)
 

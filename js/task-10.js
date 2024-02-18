@@ -33,11 +33,7 @@ function createBoxes(amount) {
     boxStack.push(createOneBox(size, getRandomHexColor()));
   }
   boxesValue.innerHTML = `${boxStack.join("")}`;
-  // boxesValue.insertAdjacentHTML("beforeend", boxStack.join(""));
 }
-
-
-
 
 function destroyBoxes() {
   boxesValue.innerHTML = "";

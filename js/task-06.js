@@ -1,7 +1,5 @@
 const input = document.querySelector('#validation-input');
 
-
-
 function onImputChange(event) {
    
     const inputEl = event.currentTarget.value.trim().length;

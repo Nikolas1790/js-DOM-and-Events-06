@@ -24,6 +24,5 @@ const li = images.map(({ url, alt }) => {
 
 console.dir(li);
 
- gallery.insertAdjacentHTML('beforeend', li);
+gallery.insertAdjacentHTML('beforeend', li);
 
-// console.dir(li);

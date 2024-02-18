@@ -11,8 +11,6 @@ decrement.addEventListener('click', onMinus);
     value.textContent = counterValue;
 };
 
-
-
 increment.addEventListener('click', () => {
     counterValue += 1;
     value.textContent = counterValue;
